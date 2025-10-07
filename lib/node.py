@@ -32,7 +32,7 @@ class Node:
             self = self.next
         return length 
 
-    def find_element(self, n):
+    def getTwoThirdsNode(self, n):
         if n <= 1:
             return None
 
@@ -51,4 +51,4 @@ if __name__ == "__main__":
     head.next.next.next = Node(3)
     head.next.next.next.next = Node(4)
     
-    print(head.find_element(5).value)
+    print(head.getTwoThirdsNode(5).value)
